@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #ff7a00 0%, #0a0a0a 60%);
+    color: white;
+}
+
+.jersey-page {
+    margin-top: 100px;
+}
+
+.left-panel {
+    position: fixed;
+    top: 15%;
+    left: 2%;
+    width: 35%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-panel h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(255,122,0,0.7);
+}
+
+.right-panel {
+    margin-left: 35%;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 60px;
+}
+
+.jersey-card {
+    position: relative;
+    height: 220px;
+    border-radius: 0;
+    background: #ffffff;
+    overflow: visible;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.jersey-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.team-logo,
+.team-name {
+    pointer-events: none;
+}
+
+.team-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    background: rgba(0,0,0,0.6);
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.team-name {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0,0,0,0.6);
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+
+.jersey-card:hover .bulls {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+    border: 1px solid #1a1a1a;
+}
+
+.jersey-card:hover .celtics {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(81, 254, 18, 0.8);
+    border: 1px solid #ffffff;
+}
+
+.jersey-card:hover .miami {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(122, 0, 0);
+    border: 1px solid #222222;
+}
+
+.jersey-card:hover .lakers {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(149, 0, 255);
+    border: 1px solid #ffee00;
+}
+
+.jersey-card:hover .gsw {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(0, 68, 255);
+    border: 1px solid #fffb00;
+}
+
+.jersey-card:hover .brooklyn {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+    border: 1px solid #000000;
+}
+
+.jersey-card:hover .milwaukee {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(0, 71, 27);
+    border: 1px solid #EEE1C6;
+}
+
+.jersey-card:hover .denver {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(255, 198, 39);
+    border: 1px solid #1D428A;
+}
+
+.jersey-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.jersey-link:visited,
+.jersey-link:active,
+.jersey-link:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-name {
+    color: white !important;
+}

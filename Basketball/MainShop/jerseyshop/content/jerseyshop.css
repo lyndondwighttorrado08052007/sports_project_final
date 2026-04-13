@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 60%, #000 100%);
+}
+
+.back-btn {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    padding: 10px 15px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,122,0,0.4);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-btn:hover {
+    background: #ff7a00;
+    color: black;
+}
+
+.product-page {
+    display: flex;
+    gap: 60px;
+    padding: 120px 80px;
+    align-items: center;
+}
+
+.product-left {
+    position: sticky;
+    top: 120px;
+}
+
+.product-left img {
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(255,122,0,0.25);
+    transition: 0.3s;
+    border: 1px solid #ff7a00;
+    border-radius: 15px;
+}
+
+.product-left img:hover {
+    transform: scale(1.05);
+    border: 1px solid #ff7a00;
+    border-radius: 15px;
+}
+
+.product-right {
+    max-width: 500px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255,122,0,0.15);
+    border: 1px solid rgba(255,122,0,0.4);
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.product-right h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    letter-spacing: 3px;
+}
+
+.price {
+    font-size: 26px;
+    color: #ff7a00;
+    margin: 10px 0 25px;
+}
+
+.selector h3 {
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sizes input {
+    display: none;
+}
+
+.sizes label {
+    padding: 10px 14px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sizes input:checked + label {
+    background: #ff7a00;
+    color: black;
+    font-weight: bold;
+}
+
+.qty {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+}
+
+.buy-btn {
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #ff7a00;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,122,0,0.5);
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 13px;
+    opacity: 0.8;
+    line-height: 1.6;
+}

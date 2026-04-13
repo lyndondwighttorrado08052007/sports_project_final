@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    margin-top: 100px;
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("../../images/shop/accessories.png");
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 25px rgba(255,165,0,0.35);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.9)
+    );
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: orange;
+    letter-spacing: 3px;
+    z-index: 2;
+    text-shadow: 0 0 25px rgba(255,165,0,0.6);
+}
+
+.hero p {
+    z-index: 2;
+    color: rgba(255,255,255,0.8);
+}
+
+.shop-categories {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.category {
+    position: relative;
+    width: 30%;
+    min-width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,165,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.category h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: orange;
+    z-index: 2;
+}
+
+.category:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(255,165,0,0.35);
+    border-color: orange;
+}
+
+.category:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+
+.category::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.2)
+    );
+
+    z-index: 1;
+}
+
+.category::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+
+.category:hover::after {
+    border-color: rgba(255,165,0,0.6);
+    box-shadow: 0 0 20px rgba(255,165,0,0.3);
+}

@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+.nba-bar{
+    margin-top: 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 40px;
+
+    background: rgba(255,255,255,0.03);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+}
+
+.back-btn{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    color: orange;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropbtn{
+    padding:10px 14px;
+    border:none;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    color:black;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.dropbtn:hover{
+    transform: scale(1.05);
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    right:0;
+    background:#111;
+    min-width:220px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.dropdown-content a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.dropdown-content a:hover{
+    background:rgba(255,165,0,0.1);
+    color:orange;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.header{
+    padding:30px 40px;
+}
+
+.header h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:50px;
+    letter-spacing:2px;
+    color:white;
+}
+
+.section-title{
+    padding:20px 40px;
+    font-size:18px;
+    letter-spacing:2px;
+    color:rgba(255,255,255,0.8);
+}
+
+.leaders{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+    padding:20px 40px;
+}
+
+.card{
+    background: rgba(255,255,255,0.05);
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    border-color: rgba(255,165,0,0.4);
+}
+
+.card img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    margin:10px 0;
+}
+
+.card p{
+    font-size:12px;
+    color:rgba(255,255,255,0.6);
+}
+
+.card h3{
+    font-size:22px;
+    color:orange;
+    margin:5px 0;
+}
+
+table{
+    width:92%;
+    margin:20px auto;
+    border-collapse:collapse;
+    background: rgba(255,255,255,0.03);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    padding:14px;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:1px;
+    background: rgba(255,165,0,0.1);
+    color:white;
+}
+
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    color:rgba(255,255,255,0.85);
+}
+
+tr:hover td{
+    background: rgba(255,165,0,0.05);
+}

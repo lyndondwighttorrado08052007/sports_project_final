@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+.hero {
+    margin-top: 100px;
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("images/shop/shoes.png") center/cover no-repeat;
+    position: relative;
+    border-radius: 30px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+    border-radius: 30px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: orange;
+    letter-spacing: 4px;
+    z-index: 2;
+    text-shadow: 0 0 25px rgba(255,165,0,0.6);
+}
+
+.hero p {
+    z-index: 2;
+    color: rgba(255,255,255,0.8);
+}
+
+.products {
+    width: 85%;
+    margin-top: 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.product {
+    width: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #111;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.image-box {
+    width: 100%;
+    height: 220px;
+    background: #0d0d0d;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff8c00, #ff2e63);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(255, 94, 0, 0.7);
+}
+
+.order-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 15px rgba(255, 94, 0, 0.7);
+    cursor:default;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    border-color: rgba(255,165,0,0.3);
+}
+
+.product:hover img {
+    transform: scale(1.04);
+}
