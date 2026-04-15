@@ -11,6 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    animation-name: fadeInUp;
+    animation-duration: 1s;
 }
 
 .hero {
@@ -131,4 +134,15 @@ body {
 .category:hover::after {
     border-color: rgba(255,165,0,0.6);
     box-shadow: 0 0 20px rgba(255,165,0,0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
