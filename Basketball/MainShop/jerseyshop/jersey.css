@@ -23,9 +23,78 @@ body {
     left: 2%;
     width: 35%;
     height: 80vh;
+    overflow: hidden;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.left-panel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.9),
+        transparent 20%,
+        transparent 80%,
+        rgba(0,0,0,0.9)
+    );
+    z-index: 5;
+}
+
+.left-panel::-webkit-scrollbar{
+    display: none;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    margin: 0 5px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+}
+
+.jersey-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: max-content;
+    height: 100%;
+    animation: slideleft 60s linear infinite;
+    z-index: 0;
+}
+
+.title {
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(255,122,0,0.9);
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .left-panel h1 {
